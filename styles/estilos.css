@@ -1,3 +1,5 @@
+@charset "utf-8";
+/*name="Bruno Gressler da Silveira";*/
 body{
     background: linear-gradient(90deg, rgb(105 158 0 / 63%) 0%, rgb(213 70 222 / 65%) 42%, rgb(149 0 255 / 77%) 96%);
     text-align: center;
@@ -54,6 +56,10 @@ section{
     width: 20%;
     height: 300px;
     margin: 10px 1%;
+    zoom: 1;
+}
+.galeriaDEFotos:hover{
+    transform: scale(1.2);
 }
 h2{
     font-size: 32pt;
@@ -72,20 +78,42 @@ h3{
     height: auto;
     padding: 14px 1%;
 }
+
+.sessaoCardapio{
+    height: 96vh !important;
+    width: 51% !important;
+    background-color:  #7b297b !important;
+    color: #ffffff;
+    font-size: 17pt;
+}
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 10px; 
+}
 p{
     margin: 0;
 }
 .cardapioLeft{
     float: left;
-    margin-right: 1%;
-    width: 10%;
-    height: auto;
-
+    margin-left: 30%;
 }
 .cardapioRight{
-    margin-left: 14%;
-    width: 10%;
-    height: auto;
+    float: right;
+    margin-right: 30%;
+}
+.botao{
+    margin-top: 20px;
+    width: 99%;
+    height: 4vh;
+    border-color: #9c019c5c;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: #b23cc3;
+    clear: both;
+    line-height: 0;
+    font-size: 17pt;
 }
 footer{
     margin-top: 248px;
