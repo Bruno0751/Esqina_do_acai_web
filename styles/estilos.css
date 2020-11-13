@@ -39,6 +39,9 @@ a:link{
     font-size: 18pt;
     color: #ffffffff;
 }
+a:visited{
+    color: #ffffff;
+}
 nav{
     height: auto;
     margin: 23px 0;
@@ -47,8 +50,17 @@ section{
     margin: 0 auto;
     height: auto;   
 }
+.galeriaDEFotos{
+    width: 20%;
+    height: 300px;
+    margin: 10px 1%;
+}
 h2{
     font-size: 32pt;
+}
+h3{
+    font-size: 18pt;
+    color: #ffffffff;
 }
 .sessao{
     margin: 0 auto;
@@ -62,6 +74,18 @@ h2{
 }
 p{
     margin: 0;
+}
+.cardapioLeft{
+    float: left;
+    margin-right: 1%;
+    width: 10%;
+    height: auto;
+
+}
+.cardapioRight{
+    margin-left: 14%;
+    width: 10%;
+    height: auto;
 }
 footer{
     margin-top: 248px;
@@ -87,8 +111,14 @@ footer input{
     text-align: justify;
 } 
 iframe{
-    width: 400px;
-    height: 300px;
+    width: 56%;
+    height: 239px;
+}
+.copyright{
+    display: block;
+    margin-top: 10px;
+    color:#ffffff;
+    font-size: 9pt;
 }
 /*desktop com monitores wide screen*/
 @media screen and (max-width: 1200px){
