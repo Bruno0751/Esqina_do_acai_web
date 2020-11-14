@@ -36,7 +36,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#contato_index" class="scroll">Fale Conosco</a></li>
+                    <li><a href="#contato_cadastrar" class="scroll">Fale Conosco</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="login.php">Cadastro/Login</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
@@ -46,55 +46,31 @@
 
         <section>
             <span style="display: none;">Esquina do Açai</span>
-            
 
-            <div class="sessao sessaoCardapio">
+            <div class="sessao">
+                <h2><i>Cadatrar</i></h2>
+                <form method="post" action="#">
+                    <input type="text" placeholder="*Qual seu Nome?" name="textNome" title="Digite seu Nome">
 
-                <h2><i>Cardápio</i></h2>
+                    <input type="email" placeholder="*Digite seu Email" name="emailEmail" title="Digite seu Email Para Acesso">
 
-                <p><strong>Copa Kids - R$ 5,00</strong></p>
-                <p><strong>Copa 330 ml - R$ 10,00</strong></p>
-                <p><strong>Copa 440 ml - R$ 14,00</strong></p>
-                <p><strong>Copa 550 ml - R$ 17,00</strong></p>
+                    <input type="text" placeholder="*Qual seu Endereço" name="textEndereco" title="Diga seu Endereço Para Entrega">
 
-                <div class="linha"></div>
+                    <input type="number" placeholder="*Qual é seu CEP" name="nunberCEP" title="Diga seu CEP Para facilitar a Entrega">
 
-                <div class="cardapioLeft">
-                    <h5><strong>Complementos:</strong></h5>
-                    <p>- Leite em Pó</p>
-                    <p>- Chocolate de Avela</p>
-                    <p>- Leite Condensado</p>
-                    <p>- Paçoca</p>
-                    <p>- Granola</p>
-                    <p>- MM's</p>
-                    <p>- Oreo</p>
-                    <p>- Trento</p>
-                    <p>- Sucrilhos</p>
-                    <p>- Ovo Maltine</p>
-                    <p>- Estikadinho</p>
-                    <p>- Kit Kat</p>
-                    <p>- Chocolate Branco</p>
-                    <p>- Chocolate Preto</p>
-                    <p>- Bis Branco</p>
-                    <p>- Bis Preto</p>
-                </div>
+                    <input type="text" placeholder="*Senha Para Acesso" name="passwordSenha" title="Crie uma Senha Para Acesso">
 
-                <div class="cardapioRight">
-                    <h5><strong>Frutas:</strong></h5>
-                    <p>- Morango</p>
-                    <p>- Banana</p>
-                    <p>- Kiwi</p>
-                    <p>- Abacaxi</p>
-                    
-                </div>
+                    <input type="number" placeholder="Qual Seu CPF" name="numberCPF" title="Diga seu CPF">
 
-                <a href="#contato_cardapio" class="scroll"><button type="button" class="botao "><strong>!Peça ja o Seu!</strong></button></a>
-
+                    <input type="submit" value="Feito" class="input_ok">
+                    <input type="reset" value="Limpar" class="input_ok input_limpar">
+                </form>
+                <a href="login.php"><button type="submit" class="input_ok bt">Voltar</button></a>
             </div>
 
         </section>
 
-        <footer id="contato_cardapio">
+        <footer id="contato_cadastrar">
             <form method="post" action="#">
                 <textarea name="menssagem" placeholder="Esceva sua Menssagem"></textarea>
 

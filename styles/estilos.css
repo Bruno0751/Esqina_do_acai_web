@@ -16,16 +16,16 @@ header{
     padding: 0.2px 1%;
     background-color: #9c019c;
 }
-.conteudo_header{
-    height: auto;
-    margin-left: 2%;
-}
 .logo{
     margin-top: -6px;
     margin-left: 2%;
     width: 10%;
     height: 65px;
     float: left;
+}
+nav{
+    height: auto;
+    margin: 23px 0;
 }
 ul{
     width: 54%;
@@ -44,29 +44,9 @@ a:link{
 a:visited{
     color: #ffffff;
 }
-nav{
-    height: auto;
-    margin: 23px 0;
-}
 section{
     margin: 0 auto;
     height: auto;   
-}
-.galeriaDEFotos{
-    width: 20%;
-    height: 300px;
-    margin: 10px 1%;
-    zoom: 1;
-}
-.galeriaDEFotos:hover{
-    transform: scale(1.2);
-}
-h2{
-    font-size: 32pt;
-}
-h3{
-    font-size: 18pt;
-    color: #ffffffff;
 }
 .sessao{
     margin: 0 auto;
@@ -78,22 +58,45 @@ h3{
     height: auto;
     padding: 14px 1%;
 }
-
-.sessaoCardapio{
-    height: 96vh !important;
-    width: 51% !important;
-    background-color:  #7b297b !important;
-    color: #ffffff;
-    font-size: 17pt;
+h2{
+    font-size: 32pt;
 }
+p{
+    margin: 0;
+}
+
+
+.galeriaDEFotos{
+    width: 20%;
+    height: 300px;
+    margin: 10px 1%;
+    zoom: 1;
+}
+.galeriaDEFotos:hover{
+    transform: scale(1.2);
+}
+
+input{
+    border-radius: 6px;
+    width: 100%;
+    height: 3vh;
+    margin-bottom: 7px;
+    text-align: justify;
+}
+
+
 .linha{
     width: 100%;
     height: 2px;
     background-color: #ffffff;
     margin-top: 10px; 
 }
-p{
-    margin: 0;
+.sessaoCardapio{
+    height: 96vh !important;
+    width: 51% !important;
+    background-color:  #7b297b !important;
+    color: #ffffff;
+    font-size: 17pt;
 }
 .cardapioLeft{
     float: left;
@@ -115,6 +118,29 @@ p{
     line-height: 0;
     font-size: 17pt;
 }
+
+
+.pass:hover{
+    text-decoration: underline;
+    color: #c78cf3;
+}
+
+.input_ok{
+    background-color: #5b9230;
+    width: 50%;
+    text-align: center;
+    color: #ffffff;
+}
+.input_limpar{
+    background-color: #843557;
+}
+.bt{
+    background-color: #5d2eda;
+    height: 3vh;
+    border-radius: 10px;
+    border-style: outset;
+}
+
 footer{
     margin-top: 248px;
     padding: 47px 3%;
@@ -131,16 +157,13 @@ textarea{
     margin-bottom: 10px;
     text-align: justify;
 }
-footer input{
-    border-radius: 6px;
-    width: 100%;
-    height: 3vh;
-    margin-bottom: 7px;
-    text-align: justify;
-} 
 iframe{
     width: 56%;
     height: 239px;
+}
+h3{
+    font-size: 18pt;
+    color: #ffffffff;
 }
 .copyright{
     display: block;
