@@ -1,1 +1,1 @@
-*.txt
+database/notas.txt
