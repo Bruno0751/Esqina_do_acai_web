@@ -1,3 +1,8 @@
+<?php
+    session_start();
+
+    include 'utl/helper.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -29,6 +34,11 @@
     <body>
         <time datetime="2012-02-15" id="topo"></time>
 
+        <?php
+            echo isset($_SESSION['msg']) ? Helper::alert($_SESSION['msg']) : "";
+            unset($_SESSION['msg']);
+        ?>
+
         <header>
             <figure>
                 <a href="index.html"><img src="images/logo.png" alt="Home page" class="logo"></a>
@@ -54,7 +64,7 @@
 
                     <input type="text" placeholder="*Senha" name="passwordSenha" title="Digite sua Senha de Acesso">
 
-                    <input type="submit" value="Feito" class="input_ok">
+                    <input type="submit" value="Feito" class="input_ok" onClick="entrar()">
                 </form>
                 <a href="cadastrar.html" class="pass">Ainda Não Possui uma Conta?</a>
             </div>

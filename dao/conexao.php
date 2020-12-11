@@ -10,7 +10,7 @@
     public static function getInstance(){
       try{
         if(!isset(self::$inst)){
-          self::$inst = new Conexao("mysql:dbname=esquina_do_acai;host=localhost","root","root");
+          self::$inst = new Conexao("mysql:dbname=esquina_do_acai;host=localhost","root","");
         }
         return self::$inst;
       }catch(PDOException $erro){

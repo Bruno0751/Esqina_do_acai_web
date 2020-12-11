@@ -1,0 +1,7 @@
+id_usuario - autoincrement - zerofill - obrigatório
+nome - utf8 - obrigatório
+email - utf8 - obrigatório
+endereco - utf8 - obrigatório
+cep - int - obrigatório
+cpf - int - não obrigatório
+senha -  utf8 - obrigatório
