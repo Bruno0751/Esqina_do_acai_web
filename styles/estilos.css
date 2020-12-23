@@ -80,11 +80,22 @@ input{
     border-radius: 6px;
     width: 100%;
     height: 3vh;
+    margin-top: 2px;
     margin-bottom: 7px;
     text-align: justify;
 }
 
-
+.zipCode{
+    width: 45%;
+    float: none;
+}
+.cep{
+    width: 20%;
+    float: left;
+}
+.numbers{
+    width: 15%;
+}
 .linha{
     width: 100%;
     height: 2px;

@@ -11,8 +11,10 @@
 
     $usuario->name = $_POST['textName'];
     $usuario->email = $_POST['emailEmail'];
-    $usuario->endereco = $_POST['textEndereco'];
     $usuario->zipCode = $_POST['nunberZipCode'];
+    $usuario->endereco = $_POST['textEndereco'];
+    $usuario->number = $_POST['numberHouse'];
+    $usuario->complement = $_POST['numberComplement'];
     $usuario->cpf = $_POST['numberCPF'];
     $usuario->password = $_POST['passwordPassword'];
     

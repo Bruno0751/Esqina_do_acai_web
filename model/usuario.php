@@ -4,8 +4,10 @@
         private $idUsuario;
         private $name;
         private $email;
-        private $endereco;
         private $zipCode;
+        private $endereco;
+        private $number;
+        private $complement;
         private $cpf;
         private $password;
 
@@ -19,15 +21,5 @@
 
         public function __set($atributo, $valor){
             $this->$atributo = $valor;
-        }
-
-        public function __toString(){
-            return nl2br("Nome : $this->idUsuario
-                Email: $this->name
-                Login: $this->email
-                Senha: $this->endereco
-                Imagem: $this->zipCode
-                Data: $this->cpf
-                IMG: $this->password");
         }
     }

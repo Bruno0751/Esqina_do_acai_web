@@ -24,6 +24,7 @@
         <link rel="shortcut icon" href="images/logo.png">
 
         <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </head>
     <body>
@@ -49,20 +50,24 @@
 
             <div class="sessao">
                 <h2><i>Cadatrar</i></h2>
-                <form method="post" action="controller/controller-cadastro.php">
-                    <input type="text" placeholder="*Qual seu Nome?" name="textName" title="Digite seu Nome">
+                <form method="post" action="#">
+                    <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome">
 
-                    <input type="email" placeholder="*Digite seu Email" name="emailEmail" title="Digite seu Email Para Acesso">
+                    <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso">
 
-                    <input type="text" placeholder="*Qual seu Endereço" name="textEndereco" title="Diga seu Endereço Para Entrega">
+                    <input type="number" placeholder="*CEP" name="nunberZipCode" title="Diga seu CEP Para facilitar a Entrega" class="cep zipCode" id="zipCode" value="">
 
-                    <input type="number" placeholder="*Qual é seu CEP" name="nunberZipCode" title="Diga seu CEP Para facilitar a Entrega">
+                    <input type="text" placeholder="*Endereço" name="textEndereco" title="Diga seu Endereço Para Entrega" class="zipCode" id="endereco">
+
+                    <input type="number" placeholder="*Número" name="numberHouse" title="Número da sua Casa" class="zipCode numbers">
+
+                    <input type="number" placeholder="Complemento" name="numberComplement" title="Algum Complemento?" class="zipCode numbers">
 
                     <input type="text" placeholder="*Senha Para Acesso" name="passwordPassword" title="Crie uma Senha Para Acesso">
 
-                    <input type="number" placeholder="Qual Seu CPF" name="numberCPF" title="Diga seu CPF">
+                    <input type="number" placeholder="CPF" name="numberCPF" title="Diga seu CPF">
 
-                    <input type="submit" value="Feito" class="input_ok">
+                    <input type="submit" value="Feito" class="input_ok" onclick="entrar()">
                     <input type="reset" value="Limpar" class="input_ok input_limpar">
                 </form>
                 <a href="login.php"><button type="submit" class="input_ok bt">Voltar</button></a>
