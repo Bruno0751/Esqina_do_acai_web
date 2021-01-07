@@ -49,26 +49,31 @@
             <span style="display: none;">Esquina do Açai</span>
 
             <div class="sessao">
-                <h2><i>Cadatrar</i></h2>
-                <form method="post" action="#">
-                    <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome">
+                <h2><i>Cadastrar</i></h2>
+                <form method="post" action="controller/controller-cadastro.php">
+                    <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome" class="form" required>
 
-                    <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso">
+                    <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso" class="form" required>
 
-                    <input type="number" placeholder="*CEP" name="nunberZipCode" title="Diga seu CEP Para facilitar a Entrega" class="cep zipCode" id="zipCode" value="">
+                    <input type="number" placeholder="*CEP" name="nunberZipCode" title="Diga seu CEP Para facilitar a Entrega" class="form cep" id="zipCode" value="" required>
 
-                    <input type="text" placeholder="*Endereço" name="textEndereco" title="Diga seu Endereço Para Entrega" class="zipCode" id="endereco">
+                    <input type="text" placeholder="*Endereço" name="textEndereco" title="Diga seu Endereço Para Entrega" class="form zipCode" id="endereco" required>
 
-                    <input type="number" placeholder="*Número" name="numberHouse" title="Número da sua Casa" class="zipCode numbers">
+                    <input type="number" placeholder="*Número" name="numberHouse" title="Número da sua Casa" class="form numbers" required>
 
-                    <input type="number" placeholder="Complemento" name="numberComplement" title="Algum Complemento?" class="zipCode numbers">
+                    <input type="number" placeholder="Complemento" name="numberComplement" title="Algum Complemento?" class="form numbers">
 
-                    <input type="text" placeholder="*Senha Para Acesso" name="passwordPassword" title="Crie uma Senha Para Acesso">
+                    <input type="number" placeholder="CPF" name="numberCPF" title="Diga seu CPF" class="form" required>
 
-                    <input type="number" placeholder="CPF" name="numberCPF" title="Diga seu CPF">
+                    <input type="text" placeholder="*Senha Para Acesso" name="passwordPassword" title="Crie uma Senha Para Acesso" class="form" required>
 
-                    <input type="submit" value="Feito" class="input_ok" onclick="entrar()">
-                    <input type="reset" value="Limpar" class="input_ok input_limpar">
+                    <select name="selectTipo" class="form">
+                        <option value="user">Cliente</option>
+                        <option value="adm">ADM</option>
+                    </select>
+
+                    <input type="submit" value="Feito" class="input_ok form">
+                    <input type="reset" value="Limpar" class="input_ok input_limpar form">
                 </form>
                 <a href="login.php"><button type="submit" class="input_ok bt">Voltar</button></a>
             </div>

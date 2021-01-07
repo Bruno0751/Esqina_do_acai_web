@@ -60,9 +60,9 @@
             <div class="sessao">
                 <h2><i>Login</i></h2>
                 <form method="post" action="#">
-                    <input type="text" placeholder="*Email" name="emailEmail" title="Digite seu Email de Acesso">
+                    <input type="text" placeholder="*Email" name="emailEmail" class="form" title="Digite seu Email de Acesso">
 
-                    <input type="text" placeholder="*Senha" name="passwordSenha" title="Digite sua Senha de Acesso">
+                    <input type="text" placeholder="*Senha" name="passwordSenha" class="form" title="Digite sua Senha de Acesso">
 
                     <input type="submit" value="Feito" class="input_ok" onClick="entrar()">
                 </form>

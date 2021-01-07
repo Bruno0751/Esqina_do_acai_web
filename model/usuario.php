@@ -2,14 +2,15 @@
     class Usuario{
 
         private $idUsuario;
-        private $name;
-        private $email;
-        private $zipCode;
-        private $endereco;
-        private $number;
-        private $complement;
-        private $cpf;
-        private $password;
+        private $c_name;
+        private $c_email;
+        private $c_zipCode;
+        private $c_endereco;
+        private $c_number;
+        private $c_complement;
+        private $c_cpf;
+        private $c_password;
+        private $c_type;
 
         public function __construct(){}
 
